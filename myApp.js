@@ -7,11 +7,15 @@ mongoose.connect(uri, {
   useUnifiedTopology: true
 });
 
+
 const personSchema = new mongoose.Schema({
-  name: type {
-    String,
-  }
+  name: String,
+  age: Number,
+  favoriteFoods: [String]
 })
+
+const Persona = mongoose.model('Persona', personSchema); 
+
 
 let Person;
 
