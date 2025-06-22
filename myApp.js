@@ -14,8 +14,7 @@ const personSchema = new mongoose.Schema({
   favoriteFoods: [String]
 })
 
-const Persona = mongoose.model('Persona', personSchema); 
-
+Person = mongoose.model('Persona', personSchema); 
 
 let Person;
 
