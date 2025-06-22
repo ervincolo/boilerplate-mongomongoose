@@ -35,7 +35,7 @@ const createAndSavePerson = (done) => {
   });
 };
 
-const createManyPeople = (arrayOfPeople, done) => {
+const createManyPeople = (done) => {
   const arrayOfPeople = [
     { name: "Ervin", age: 29, favoriteFoods: ["Burek"] },
     { name: "Lamija", age: 28, favoriteFoods: ["Sushi", "Tuna"] },
