@@ -1,7 +1,8 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
+const uri = 'mongodb+srv://coloervin2408:ervincolo24@ervinovcluster.1hemyjo.mongodb.net/mongo-baza?retryWrites=true&w=majority&appName=ErvinovCluster';
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
