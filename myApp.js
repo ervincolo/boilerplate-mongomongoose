@@ -8,9 +8,9 @@ mongoose.connect(uri, {
 });
 
 const personSchema = new mongoose.Schema({
-  name: String,
-  age: Number,
-  favoriteFoods: [String]
+  name: type {
+    String,
+  }
 })
 
 let Person;
