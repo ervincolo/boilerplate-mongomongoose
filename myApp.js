@@ -58,12 +58,12 @@ const findPeopleByName = (personName, done) => {
 };
 
 const findOneByFood = (food, done) => {
-  Person.findOneByFood({food: food }, (err,data) => {
+  Person.findOne({favoriteFoods: food}, (err,data) => {
     if(err) {
-      return console.log(err)
+      return done(err);
     }
-    done(null,data);
-  });
+    done(null,data)
+  })
 };
 
 
